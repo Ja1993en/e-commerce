@@ -5,12 +5,6 @@
 *Build the back end for an e-commerce site. Take a working Express.js API and configure it to use Sequelize to interact with a MySQL database.*
 
 
-### App Demo
-
-- Create Schema and Seed data
-
-- [Video](https://www.awesomescreenshot.com/video/9153661?key=5afbea4f1dac2866faa7a5fd9acf4dcb)
-
 
 ### User Story
 
@@ -21,85 +15,22 @@ SO THAT my company can compete with other e-commerce companies
 ```
 a
 
-### Database Models
+## Support
 
-- `Category`
+For support, email mcneal.jalen@yahoo.com
 
-    - `id`
-        - Integer
-        - Doesn't allow null values
-        - Set as primary key
-        - Uses auto increment
 
-    - `category_name`
-        - String
-        - Doesn't allow null values
+## Authors
 
-- `Product`
+- [@ja1993en](https://www.github.com/ja1993en)
 
-    - `id`
-        - Integer
-        - Doesn't allow null values
-        - Set as primary key
-        - Uses auto increment
+# Heres a working video of the application :
 
-    - `product_name`
-        - String
-        - Doesn't allow null values
 
-    - `price`
-        - Decimal
-        - Doesn't allow null values
-        - Validates that the value is a decimal
+- [video] Create Schema and Seed data
 
-    - `stock`
-        - Integer
-        - Doesn't allow null values
-        - Set a default value of 10
-        - Validates that the value is numeric
+- (https://www.awesomescreenshot.com/video/9153661?key=5afbea4f1dac2866faa7a5fd9acf4dcb)
 
-    - `category_id`
-        - Integer
-        - References the category model's id
-
-- `Tag`
-
-    - `id`
-        - Integer
-        - Doesn't allow null values
-        - Set as primary key
-        - Uses auto increment
-
-    - `tag_name`
-        - String
-
-- `ProductTag`
-
-    - `id`
-        - Integer
-        - Doesn't allow null values
-        - Set as primary key
-        - Uses auto increment
-
-    - `product_id`
-        - Integer
-        - References the product model's id
-
-    - `tag_id`
-        - Integer
-        - References the tag model's id
-
-### Associations
-
-*You'll need to execute association methods on your Sequelize models to create the following relationships between them:*
-
-- Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
-
-- Category has many Product models.
-
-- Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
-
-- Tag belongs to many Product models.
 
 ### Instructions on how to run the app
 
