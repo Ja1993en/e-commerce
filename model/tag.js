@@ -23,3 +23,4 @@ Tag.init(
         modelName: 'Tag',
     }
 )
+module.exports = Tag;
