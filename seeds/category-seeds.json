@@ -1,4 +1,4 @@
-const categoryData = [
+[
     {
         category_name: 'Shitrs',
     },
@@ -13,7 +13,7 @@ const categoryData = [
     },
     {
         category_name: 'Shoes',
-    },
+    }
 ]
 
 module.exports = categoryData;

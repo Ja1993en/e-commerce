@@ -1,4 +1,4 @@
-const tagData = [
+[
     {
         tag_name: 'rock music',
     },
