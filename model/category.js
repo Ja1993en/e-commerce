@@ -28,4 +28,4 @@ Category.init(
   );
 
 
-  module.exports = Category;
+  module.exports =  Category;

@@ -2,8 +2,10 @@ const router = require('express').Router();
 const {Category, Product} = require('../../model');
 
 
+
+
 router.get('/', async (req, res) => {
-  console.log("Jalen");
+  
     const allCat = await Category.findAll({
      include: { model: Product},
     })
